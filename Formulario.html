@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<style> 
+    h1{ font-family: Times;
+        background-color: rgb(235, 206, 247);
+    }
+    h2{
+        font-family: Times;
+        background-color: rgb(235, 206, 247);
+    }
+    p{
+        font-family: Times;
+    }
+</style>
+<body>
+  
+    <a href="index.html">Inicio</a>
+    <center><h1>Basquetbol</h1></center>
+    <p>formulario:</p>
+    <form action="/action_page.php">
+        <fieldset>
+        Nombre de usuario:<br>
+        <input type="text" name="username" maxlength="10" autofocus autocomplete="on" required
+        ><br>
+        Contraseña:<br>
+        <input type="password" name="psw" maxlength="10" required><br>
+        Nombre:<br>
+        <input type="text" name="firstname"maxlength="15"autocomplete="on" required><br>
+        Apellidos:<br>
+        <input type="text" name="lastname"maxlength="15" required><br><br>
+        <input type="radio" name="gender" value="male" checked  required> Hombre<br>
+        <input type="radio" name="gender" value="female" required> Mujer<br>
+        <input type="radio" name="gender" value="other" required> Otro<br>
+        Selecciona tu color favorito:
+        <input type="color" name="favcolor" required><br><br>
+        Tu cumpleaños:
+            <input type="date" name="birthday" max="99" min="0" required><br>
+           <br>
+            ¿Cuando te registraste? (fecha y hora):
+            <input type="datetime-local" name="daytime" required><br><br>
+            Correo electrónico:
+            <input type="email" name="email" required><br><br>
+            Selecciona un fichero: <input type="file" name="myFile" ><br><br>
+            Mes y año:
+            <input type="month" name="monthYear" required><br>
+            <br>
+            cuales de estos deportistas son basquetbolistas:
+            <br><br>
+            <label for="name">Lebron james</label><br>
+            <input id="name"type="checkbox" name="name" value="Lebron james"><br>
+            <label for="name">kobe bryant</label><br>
+            <input id="name"type="checkbox" name="name" value="kobe bryant"><br>
+            <label for="name">James Rodriguez</label><br>
+            <input id="name"type="checkbox" name="name" value=">James Rodriguezr"><br>
+            <label for="name">Messi</label><br>
+            <input id="name"type="checkbox" name="name" value=">Messi"><br>
+            <label for="name">Nairo Quintana</label><br>
+            <input id="name"type="checkbox" name="name" value="Nairo Quintana"><br>
+            <br><br>
+            <input type="reset" name="name">
+            <input type="submit" name="name">
+        </fieldset>
+            </form>
+    
+</body>
+</html>
